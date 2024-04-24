@@ -44,7 +44,7 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon"
 st.text(fruityvice_response.json())
 
 
-fruity_wise=st.dataframe(data='fruityvice_response.json()',use_container_width=True)
+fruity_wise=st.dataframe(data=fruityvice_response.json(),use_container_width=True)
 
 
 
